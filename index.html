@@ -1,141 +1,76 @@
-/* CSS Variables */
-:root {
-  --main-bg: linear-gradient(to right, #6c63ff, #ffb6c1);
-  --primary-color: #ffffff;
-  --accent-color: #ff69b4;
-  --form-bg: #1c1c1c;
-}
+<!-- rebuild site -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marwa Noorestani Cinema</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Marwa Noorestani Cinema</h1>
+    <nav>
+      <ul>
+        <li><a href="#now-showing">Now Showing</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-/* General Styling */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  background: var(--main-bg);
-  color: var(--primary-color);
-}
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Welcome to Marwa Noorestani Cinema</h2>
+      <p>Enjoy the best American and Turkish movies with us!</p>
+      <a href="#now-showing" class="btn">See Showtimes</a>
+    </div>
+  </section>
 
-/* Header */
-header {
-  text-align: center;
-  padding: 2rem 1rem;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
-}
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
-}
-header p {
-  font-size: 1.2rem;
-  opacity: 0.9;
-}
+  <!-- Now Showing -->
+  <section id="now-showing">
+    <h2>Now Showing</h2>
+    <div class="movies">
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/I/81ExhpBEbHL._AC_SY679_.jpg" alt="Avengers Endgame Poster">
+        <h3>Avengers: Endgame</h3>
+        <p>Epic Marvel heroes come together for the final battle.</p>
+        <button>Book Tickets</button>
+      </div>
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/I/71n58xDmuFL._AC_SY679_.jpg" alt="Interstellar Poster">
+        <h3>Interstellar</h3>
+        <p>A journey through space and time to save humanity.</p>
+        <button>Book Tickets</button>
+      </div>
+      <div class="card">
+        <img src="https://tr.web.img4.acsta.net/c_310_420/pictures/15/01/23/10/49/154178.jpg" alt="Kurt Seyit ve Sura Poster">
+        <h3>Kurt Seyit ve Şura</h3>
+        <p>A romantic Turkish drama of love, war, and destiny.</p>
+        <button>Book Tickets</button>
+      </div>
+    </div>
+  </section>
 
-/* Profile Section */
-.profile {
-  padding: 2rem;
-  text-align: center;
-}
-.profile h2 {
-  color: var(--primary-color);
-  margin-bottom: 1rem;
-}
-.profile-pic {
-  margin-top: 1rem;
-  width: 200px;
-  border-radius: 50%;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.5);
-  transition: transform 0.3s ease;
-}
-.profile-pic:hover {
-  transform: scale(1.05);
-}
+  <!-- About -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Marwa Noorestani Cinema brings the best Turkish and American movies to the screen with comfort and quality. Located in the heart of the city, we offer a premium cinema experience.</p>
+  </section>
 
-/* Lists */
-ul li:nth-child(odd), ol li:nth-child(odd) {
-  background-color: rgba(255, 182, 193, 0.2);
-}
-ul, ol {
-  margin: 10px 0 20px 20px;
-  padding: 10px;
-  border-radius: 5px;
-}
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: info@marwacinema.com</p>
+    <p>Phone: +93 700 123 456</p>
+  </section>
 
-/* Fun Fact */
-.fun-fact {
-  background-color: rgba(255, 182, 193, 0.2);
-  padding: 15px;
-  border-radius: 10px;
-  margin: 20px;
-}
-
-/* Table */
-table {
-  width: 80%;
-  margin: 10px auto;
-  border-collapse: collapse;
-  background: rgba(255,255,255,0.1);
-}
-th, td {
-  border: 1px solid #ccc;
-  padding: 10px;
-  text-align: left;
-  color: var(--primary-color);
-}
-
-/* Form */
-form {
-  width: 60%;
-  margin: 20px auto;
-  background-color: var(--form-bg);
-  padding: 15px;
-  border-radius: 10px;
-}
-input, textarea {
-  width: 100%;
-  padding: 8px;
-  margin: 5px 0 15px 0;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  background-color: #2c2c2c;
-  color: #fff;
-}
-input:focus, textarea:focus {
-  border-color: var(--accent-color);
-  outline: none;
-}
-
-/* Button */
-button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: var(--accent-color);
-  color: #fff;
-  cursor: pointer;
-}
-button:hover {
-  background-color: #ff1493;
-}
-button:focus {
-  outline: 2px solid var(--primary-color);
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-  border-top: 1px solid #ccc;
-  background: rgba(0,0,0,0.2);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  form, table {
-    width: 90%;
-  }
-  .profile-pic {
-    width: 150px;
-  }
-}
+  <!-- Footer -->
+  <footer>
+    <p>&copy; Marwa Noorestani Cinema 2025</p>
+  </footer>
+</body>
+</html>
