@@ -1,22 +1,25 @@
 /* Base styles */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: #000;
   color: #fff;
+  line-height: 1.6;
 }
 
 header {
   background-color: #111;
-  padding: 15px;
+  padding: 15px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 header h1 {
-  color: #e50914; /* Netflix-style red */
+  color: #e50914;
   margin: 0;
+  font-size: 1.8rem;
 }
 
 nav ul {
@@ -28,8 +31,10 @@ nav ul {
 }
 
 nav a {
-  color: white;
+  color: #fff;
   text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
 nav a:hover {
@@ -38,9 +43,18 @@ nav a:hover {
 
 /* Hero section */
 .hero {
-  text-align: center;
-  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: url("https://via.placeholder.com/1200x400/000000/e50914?text=Marwa+Noorestani+Cinema") no-repeat center/cover;
+  height: 400px;
+  text-align: center;
+}
+
+.hero-content {
+  background-color: rgba(0,0,0,0.6);
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .hero h2 {
@@ -48,22 +62,27 @@ nav a:hover {
   margin-bottom: 10px;
 }
 
-.hero button {
-  background-color: #e50914;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
+.hero p {
+  font-size: 1rem;
+  margin-bottom: 20px;
 }
 
-.hero button:hover {
+.btn {
+  background-color: #e50914;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
   background-color: #ff1e2d;
 }
 
 /* Now Showing */
 #now-showing {
-  padding: 40px 20px;
+  padding: 50px 20px;
   text-align: center;
 }
 
@@ -77,9 +96,14 @@ nav a:hover {
 .card {
   background-color: #111;
   padding: 15px;
-  border-radius: 8px;
-  width: 200px;
-  box-shadow: 0 4px 6px rgba(229, 9, 20, 0.5);
+  border-radius: 10px;
+  width: 220px;
+  box-shadow: 0 4px 8px rgba(229, 9, 20, 0.5);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .card img {
@@ -89,6 +113,7 @@ nav a:hover {
 
 .card h3 {
   color: #e50914;
+  margin: 10px 0 5px;
 }
 
 .card button {
@@ -99,6 +124,7 @@ nav a:hover {
   padding: 8px;
   border-radius: 5px;
   cursor: pointer;
+  transition: background 0.3s;
 }
 
 .card button:hover {
@@ -107,7 +133,7 @@ nav a:hover {
 
 /* About & Contact */
 #about, #contact {
-  padding: 30px 20px;
+  padding: 40px 20px;
   text-align: center;
 }
 
@@ -115,7 +141,7 @@ nav a:hover {
 footer {
   background-color: #111;
   text-align: center;
-  padding: 15px;
+  padding: 20px;
   margin-top: 20px;
 }
 
@@ -133,5 +159,9 @@ footer {
 
   .hero h2 {
     font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
   }
 }
