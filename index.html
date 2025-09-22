@@ -1,76 +1,66 @@
-<!-- rebuild site -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marwa Noorestani Cinema</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>My Movie Page</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    .card {
+      border: 2px solid red;
+      margin: 20px auto;
+      padding: 20px;
+      width: 300px;
+      border-radius: 10px;
+      background-color: #111;
+      box-shadow: 0 0 10px red;
+    }
+    img {
+      width: 100%;
+      border-radius: 5px;
+    }
+    h2 {
+      color: red;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 10px;
+      background: red;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .btn:hover {
+      background: darkred;
+    }
+  </style>
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <h1>Marwa Noorestani Cinema</h1>
-    <nav>
-      <ul>
-        <li><a href="#now-showing">Now Showing</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <h2>Welcome to Marwa Noorestani Cinema</h2>
-      <p>Enjoy the best American and Turkish movies with us!</p>
-      <a href="#now-showing" class="btn">See Showtimes</a>
-    </div>
-  </section>
+  <h1>🎬 Movie Collection</h1>
 
-  <!-- Now Showing -->
-  <section id="now-showing">
-    <h2>Now Showing</h2>
-    <div class="movies">
-      <div class="card">
-        <img src="https://m.media-amazon.com/images/I/81ExhpBEbHL._AC_SY679_.jpg" alt="Avengers Endgame Poster">
-        <h3>Avengers: Endgame</h3>
-        <p>Epic Marvel heroes come together for the final battle.</p>
-        <button>Book Tickets</button>
-      </div>
-      <div class="card">
-        <img src="https://m.media-amazon.com/images/I/71n58xDmuFL._AC_SY679_.jpg" alt="Interstellar Poster">
-        <h3>Interstellar</h3>
-        <p>A journey through space and time to save humanity.</p>
-        <button>Book Tickets</button>
-      </div>
-      <div class="card">
-        <img src="https://tr.web.img4.acsta.net/c_310_420/pictures/15/01/23/10/49/154178.jpg" alt="Kurt Seyit ve Sura Poster">
-        <h3>Kurt Seyit ve Şura</h3>
-        <p>A romantic Turkish drama of love, war, and destiny.</p>
-        <button>Book Tickets</button>
-      </div>
-    </div>
-  </section>
+  <!-- Interstellar -->
+  <div class="card">
+    <img src="https://m.media-amazon.com/images/I/71yAzryjLxL._AC_SY679_.jpg" alt="Interstellar Poster">
+    <h2>Interstellar</h2>
+    <p>A journey through space and time to save humanity.</p>
+    <a href="#" class="btn">Book Tickets</a>
+  </div>
 
-  <!-- About -->
-  <section id="about">
-    <h2>About Us</h2>
-    <p>Marwa Noorestani Cinema brings the best Turkish and American movies to the screen with comfort and quality. Located in the heart of the city, we offer a premium cinema experience.</p>
-  </section>
+  <!-- Kurt Seyit ve Şura -->
+  <div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/en/f/fc/Kurt_Seyit_ve_%C5%9Eura.jpg" alt="Kurt Seyit ve Şura Poster">
+    <h2>Kurt Seyit ve Şura</h2>
+    <p>A romantic Turkish drama of love, war, and destiny.</p>
+    <a href="#" class="btn">Book Tickets</a>
+  </div>
 
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: info@marwacinema.com</p>
-    <p>Phone: +93 700 123 456</p>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; Marwa Noorestani Cinema 2025</p>
-  </footer>
 </body>
 </html>
