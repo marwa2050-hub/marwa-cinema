@@ -3,64 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Movie Page</title>
-  <style>
-    body {
-      background-color: black;
-      color: white;
-      font-family: Arial, sans-serif;
-      text-align: center;
-    }
-    .card {
-      border: 2px solid red;
-      margin: 20px auto;
-      padding: 20px;
-      width: 300px;
-      border-radius: 10px;
-      background-color: #111;
-      box-shadow: 0 0 10px red;
-    }
-    img {
-      width: 100%;
-      border-radius: 5px;
-    }
-    h2 {
-      color: red;
-    }
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      margin-top: 10px;
-      background: red;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-    .btn:hover {
-      background: darkred;
-    }
-  </style>
+  <title>Marwa Cinema</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <h1>🎬 Marwa Cinema</h1>
+    <p>Welcome to the world of movies!</p>
+  </header>
 
-  <h1>🎬 Movie Collection</h1>
+  <section class="gallery">
+    <div class="movie">
+      <img src="interstellar.jpg.jpeg" alt="Interstellar Poster">
+      <h3>Interstellar (2014)</h3>
+    </div>
 
-  <!-- Interstellar -->
-  <div class="card">
-    <img src="https://m.media-amazon.com/images/I/71yAzryjLxL._AC_SY679_.jpg" alt="Interstellar Poster">
-    <h2>Interstellar</h2>
-    <p>A journey through space and time to save humanity.</p>
-    <a href="#" class="btn">Book Tickets</a>
-  </div>
+    <div class="movie">
+      <img src="avatar.jpg.jpeg" alt="Avatar Poster">
+      <h3>Avatar: The Way of Water (2022)</h3>
+    </div>
 
-  <!-- Kurt Seyit ve Şura -->
-  <div class="card">
-    <img src="https://upload.wikimedia.org/wikipedia/en/f/fc/Kurt_Seyit_ve_%C5%9Eura.jpg" alt="Kurt Seyit ve Şura Poster">
-    <h2>Kurt Seyit ve Şura</h2>
-    <p>A romantic Turkish drama of love, war, and destiny.</p>
-    <a href="#" class="btn">Book Tickets</a>
-  </div>
+    <div class="movie">
+      <img src="inception.jp.jpeg" alt="Inception Poster">
+      <h3>Inception (2010)</h3>
+    </div>
 
+    <div class="movie">
+      <img src="kelebegin.jpg.jpeg" alt="Kelebegin Ruyasi Poster">
+      <h3>Kelebegin Rüyası (2013)</h3>
+    </div>
+
+    <div class="movie">
+      <img src="ayla.jpg.jpeg" alt="Ayla Poster">
+      <h3>Ayla: The Daughter of War (2017)</h3>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Marwa Cinema | Designed with ❤️</p>
+  </footer>
 </body>
 </html>
